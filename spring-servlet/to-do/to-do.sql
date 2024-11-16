@@ -9,16 +9,16 @@ create table user(
 	name varchar(255) not null,
 	email varchar(255) not null,
 	password varchar(255) not null,
-	created_at date default current_timestamp,
-	updated_at date
+	created_at datetime default CURRENT_TIMESTAMP,
+	updated_at datetime
 );
 
 create table task(
 	id int primary key auto_increment,
 	name varchar(255) not null,
 	description text,
-	created_at date default current_timestamp,
-	updated_at date,
+	created_at datetime default CURRENT_TIMESTAMP,
+	updated_at datetime,
 	user_id int not null,
 	foreign key (user_id) references user (id)
 );

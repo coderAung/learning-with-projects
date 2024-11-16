@@ -1,3 +1,5 @@
+use to_do;
+
 insert into user (name, email, password) values ("Aung Aung", "aung@gmail.com", "password");
 insert into user (name, email, password) values ("Ko Ko", "ko@gmail.com", "password");
 insert into user (name, email, password) values ("Su Su", "su@gmail.com", "password");
